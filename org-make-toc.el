@@ -440,6 +440,7 @@ created."
       (with-current-buffer buffer
         (buffer-disable-undo)
         (org-mode)
+        (setq-local auto-save-default nil)
         (setq-local org-hide-emphasis-markers t)))
     (with-current-buffer buffer
       (insert string)
